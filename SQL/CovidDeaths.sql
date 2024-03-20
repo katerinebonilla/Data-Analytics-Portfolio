@@ -1,3 +1,6 @@
+/*
+Analyzing Global Covid-Deaths
+*/
 Select *
 From PortfolioProject..CovidDeaths
 Where continent is not null
