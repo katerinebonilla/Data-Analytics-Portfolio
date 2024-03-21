@@ -1,0 +1,552 @@
+
+--------------------------------------------------------
+
+--  File created - Friday-October-21-2022   
+--  Version 0.3
+
+--------------------------------------------------------
+
+REM Inserting 20 family records
+SET DEFINE OFF;
+Insert into FAMILIES (FAMILY_ID,FAMILY_NAME,NUM_MEMBERS) values (824020,'Brown',2);
+Insert into FAMILIES (FAMILY_ID,FAMILY_NAME,NUM_MEMBERS) values (824020,'Brown',2);
+Insert into FAMILIES (FAMILY_ID,FAMILY_NAME,NUM_MEMBERS) values (394303,'Smith',2);
+Insert into FAMILIES (FAMILY_ID,FAMILY_NAME,NUM_MEMBERS) values (54934,'Johnson',2);
+Insert into FAMILIES (FAMILY_ID,FAMILY_NAME,NUM_MEMBERS) values (30245,'Mac',2);
+Insert into FAMILIES (FAMILY_ID,FAMILY_NAME,NUM_MEMBERS) values (962743,'Ronalds',3);
+Insert into FAMILIES (FAMILY_ID,FAMILY_NAME,NUM_MEMBERS) values (619090,'Mark',3);
+Insert into FAMILIES (FAMILY_ID,FAMILY_NAME,NUM_MEMBERS) values (160879,'Payne',3);
+Insert into FAMILIES (FAMILY_ID,FAMILY_NAME,NUM_MEMBERS) values (667193,'Bonilla',3);
+Insert into FAMILIES (FAMILY_ID,FAMILY_NAME,NUM_MEMBERS) values (62034,'Ferrari',3);
+Insert into FAMILIES (FAMILY_ID,FAMILY_NAME,NUM_MEMBERS) values (543061,'White',4);
+Insert into FAMILIES (FAMILY_ID,FAMILY_NAME,NUM_MEMBERS) values (248992,'George',2);
+Insert into FAMILIES (FAMILY_ID,FAMILY_NAME,NUM_MEMBERS) values (118128,'Bloom',3);
+Insert into FAMILIES (FAMILY_ID,FAMILY_NAME,NUM_MEMBERS) values (846062,'Adams',2);
+Insert into FAMILIES (FAMILY_ID,FAMILY_NAME,NUM_MEMBERS) values (186410,'Levine',2);
+Insert into FAMILIES (FAMILY_ID,FAMILY_NAME,NUM_MEMBERS) values (977906,'Lavigne',2);
+Insert into FAMILIES (FAMILY_ID,FAMILY_NAME,NUM_MEMBERS) values (411045,'Swift',3);
+Insert into FAMILIES (FAMILY_ID,FAMILY_NAME,NUM_MEMBERS) values (745708,'Iver',1);
+Insert into FAMILIES (FAMILY_ID,FAMILY_NAME,NUM_MEMBERS) values (776771,'Gomez',1);
+Insert into FAMILIES (FAMILY_ID,FAMILY_NAME,NUM_MEMBERS) values (224180,'Baldwin',1);
+Insert into FAMILIES (FAMILY_ID,FAMILY_NAME,NUM_MEMBERS) values (59669,'Ferrufino',1);
+
+REM Inserting 50 customer records with family ids from above
+SET DEFINE OFF;
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (3882360355,'Gwendolyn Deleon',to_date('01-AUG-10','DD-MON-RR'),'F','Silver','Doctor','105-57-6732','Y','in.hendrerit@yahoo.edu',824020);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (826191346,'Samuel Rose',to_date('20-JUN-02','DD-MON-RR'),'M','Silver','Doctor','671-36-9973','Y','ac@hotmail.net',394303);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (4837465017,'Amela Hurst',to_date('10-SEP-92','DD-MON-RR'),'M','Silver','Nurse','284-50-5354','Y','tempor@aol.com',54934);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (4045732102,'Yasir Harrison',to_date('04-MAY-97','DD-MON-RR'),'F','Silver','Nurse','685-22-4543','Y','fringilla.est.mauris@protonmail.ca',30245);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (6747492572,'Colby Olson',to_date('14-JAN-12','DD-MON-RR'),'F','Gold','Teacher','797-89-3366','Y','elit.a@yahoo.ca',962743);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (4887101747,'Channing Quinn',to_date('19-AUG-96','DD-MON-RR'),'M','Gold','Mailman','470-85-1951','Y','ac.orci@google.ca',619090);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (6418215976,'Paul Sutton',to_date('22-JUL-90','DD-MON-RR'),'F','Gold','Mailman','106-58-8628','Y','nullam@aol.ca',160879);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (1915320819,'Eric Willis',to_date('24-APR-08','DD-MON-RR'),'F','Silver','Bartender','727-23-2965','Y','eu.neque.pellentesque@protonmail.com',667193);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (8868222372,'Jessica Drake',to_date('02-DEC-86','DD-MON-RR'),'M','Silver','Cashier','786-46-5587','Y','egestas.rhoncus@aol.com',62034);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (8218652833,'Lee Benton',to_date('16-JUL-08','DD-MON-RR'),'M','Gold','MUA','316-48-8625','Y','molestie.sed.id@aol.org',543061);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (6552968172,'Harriet Phillips',to_date('10-JAN-91','DD-MON-RR'),'F','Gold','Professional Dancer','457-66-3176','Y','sed.id.risus@outlook.edu',248992);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (5082901842,'Logan Hubbard',to_date('15-FEB-80','DD-MON-RR'),'M','Silver','Professional Dancer','648-41-5004','Y','elementum@yahoo.com',118128);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (3485191324,'Upton Parks',to_date('15-NOV-83','DD-MON-RR'),'M','Gold','Firefighter','153-62-7142','Y','dolor.dolor@protonmail.edu',846062);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (3022225686,'Vance Boyd',to_date('21-FEB-81','DD-MON-RR'),'F','Gold','Accountant','325-28-3292','Y','magna@protonmail.net',186410);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (8012766616,'Otto Peterson',to_date('19-MAR-88','DD-MON-RR'),'M','Silver','Engineer','354-97-8127','Y','ridiculus.mus@aol.com',977906);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (8200303474,'Basil Pittman',to_date('03-JAN-85','DD-MON-RR'),'F','Silver','Doctor','574-19-1084','Y','magna.a.neque@protonmail.org',411045);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (5016335483,'Hilda Petersen',to_date('18-SEP-12','DD-MON-RR'),'F','Silver','Nurse','434-51-9451','Y','quam.pellentesque@outlook.net',745708);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (8144548225,'Penelope Mcgee',to_date('18-JUN-07','DD-MON-RR'),'F','Gold','Cashier','746-54-8778','Y','imperdiet.erat.nonummy@hotmail.couk',776771);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (1542321668,'Kibo Bray',to_date('15-MAR-97','DD-MON-RR'),'M','Gold','Teacher','372-74-7414','Y','libero.et@outlook.net',224180);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (1635252884,'Logan Winters',to_date('25-FEB-86','DD-MON-RR'),'F','Gold','Bartender','590-66-7014','Y','nulla.eu@google.net',59669);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (9639112538,'Brynne Emerson',to_date('29-OCT-99','DD-MON-RR'),'M','Silver','Cashier','964-57-5137','Y','id@google.edu',118128);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (6839833886,'Kerry Perez',to_date('29-MAY-84','DD-MON-RR'),'F','Silver','Accountant','476-11-6187','Y','velit.quisque@yahoo.com',824020);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (1646285290,'Zenia Delacruz',to_date('13-JAN-01','DD-MON-RR'),'M','Gold','Engineer','388-42-9587','Y','augue@aol.org',186410);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (5346126412,'Cecilia Briggs',to_date('10-APR-93','DD-MON-RR'),'F','Silver','Lawyer','208-48-1645','Y','faucibus.orci@aol.edu',62034);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (2038532833,'Galvin Jackson',to_date('16-JUN-09','DD-MON-RR'),'F','Silver','Lawyer','521-15-7210','Y','ligula.consectetuer@yahoo.edu',null);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (5657388552,'Erasmus Wagner',to_date('10-NOV-85','DD-MON-RR'),'F','Silver','Surgeon','635-46-4628','Y','rutrum@protonmail.net',62034);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (4522370768,'Cadman Noel',to_date('17-SEP-00','DD-MON-RR'),'M','Gold','Surgeon','665-47-4338','Y','sociis.natoque@aol.org',411045);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (4174465116,'Mary Wong',to_date('13-MAY-96','DD-MON-RR'),'M','Silver','Waiter','622-04-1343','Y','tempus.non.lacinia@hotmail.net',118128);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (6428711610,'Roanna Rivas',to_date('21-DEC-92','DD-MON-RR'),'F','Gold','Waiter','018-32-3987','Y','magna.phasellus@google.ca',411045);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (3646823306,'Herrod Church',to_date('15-APR-85','DD-MON-RR'),'F','Gold','Doorman','280-95-0555','Y','nunc.sollicitudin.commodo@protonmail.net',962743);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (635518276,'Abdul Mcneil',to_date('15-MAR-92','DD-MON-RR'),'M','Silver','Doctor','353-04-5676','Y','nam.porttitor@icloud.couk',null);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (3884639261,'Lilah Mann',to_date('01-JUN-80','DD-MON-RR'),'F','Silver','Nurse','634-32-6664','Y','aliquam.rutrum.lorem@outlook.couk',248992);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (2171377164,'Latifah Brennan',to_date('09-JUL-09','DD-MON-RR'),'F','Gold','Teacher','799-46-6084','Y','cras.dictum@icloud.com',30245);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (7615405757,'Jolie Sampson',to_date('10-MAY-03','DD-MON-RR'),'M','Gold','Teacher','049-15-8142','Y','per.conubia@aol.couk',846062);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (7382137763,'Ima Reeves',to_date('07-MAR-02','DD-MON-RR'),'F','Gold','Mailman','172-41-5566','Y','suspendisse.aliquet@icloud.ca',962743);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (928787108,'Herman Cervantes',to_date('16-JUL-91','DD-MON-RR'),'F','Silver','Mailman','950-38-1897','Y','neque.tellus.imperdiet@protonmail.edu',543061);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (547754312,'Jade Mosley',to_date('14-SEP-94','DD-MON-RR'),'M','Silver','Bartender','920-83-2171','Y','eleifend@google.couk',394303);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (1108442347,'Dorian Foster',to_date('20-APR-97','DD-MON-RR'),'M','Silver','Bartender','750-68-7510','Y','a.scelerisque.sed@yahoo.org',54934);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (1137672915,'Echo Brooks',to_date('13-DEC-91','DD-MON-RR'),'F','Silver','Cashier','817-81-6267','Y','a@protonmail.com',619090);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (8367525689,'Meredith Gentry',to_date('17-SEP-92','DD-MON-RR'),'F','Silver','MUA','834-53-5281','Y','sollicitudin@aol.org',160879);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (5456348381,'Dane Page',to_date('09-MAR-13','DD-MON-RR'),'M','Silver','MUA','584-38-7580','Y','libero.proin@aol.org',160879);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (2115283604,'Halla Mayer',to_date('14-DEC-04','DD-MON-RR'),'M','Silver','Professional Dancer','816-87-5578','Y','diam@google.org',543061);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (4322449536,'Logan Holmes',to_date('12-JAN-04','DD-MON-RR'),'F','Silver','Professional Dancer','178-81-8584','Y','aliquet@google.net',977906);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (3370992897,'Rana Yang',to_date('30-MAY-83','DD-MON-RR'),'M','Gold','Firefighter','188-99-7847','Y','mauris.molestie@hotmail.net',null);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (7216557687,'Walker Gallegos',to_date('15-AUG-85','DD-MON-RR'),'M','Silver','Firefighter','384-83-9435','Y','rutrum.magna.cras@hotmail.edu',619090);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (3738361302,'Blaze Reid',to_date('31-JUL-97','DD-MON-RR'),'M','Gold','Accountant','042-28-3525','Y','nunc.risus@aol.couk',667193);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (5451895607,'Germane Gill',to_date('29-APR-07','DD-MON-RR'),'F','Gold','Firefighter','917-62-6481','Y','mi@icloud.net',null);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (5477272944,'Uta Hays',to_date('12-AUG-91','DD-MON-RR'),'F','Gold','Accountant','184-26-1897','Y','proin.non@protonmail.couk',543061);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (1662213964,'Lenore Singleton',to_date('16-FEB-06','DD-MON-RR'),'F','Silver','Doorman','164-83-1858','Y','sed.facilisis@protonmail.couk',667193);
+Insert into CUSTOMERS (CID,CNAME,DOB,GENDER,MSTATUS,OCCUPATION,SSN,IS_MEMBER,EMAIL,FAMILY_ID) values (2032026412,'Jenna Marshall',to_date('10-JAN-89','DD-MON-RR'),'F','Silver','Musician','218-45-2049','Y','ist54@live.com',null);
+
+REM Inserting address records with a few customers having extra addresses
+
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (547754312,'Alpine','Apartment','Tuburan','Florida','12669');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (635518276,'Ohio','Apartment','Krajandadapmulyo','Kansas','21045');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (826191346,'Johnson','Apartment','?er?any','Iowa','17303');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (928787108,'Pierstorff','House','Gataivai','Florida','15899');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (1108442347,'Buhler','Apartment','Calle Blancos','New York','18698');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (1137672915,'Debra','Condo','Vicente Guerrero','California','17753');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (1542321668,'Muir','Apartment','Fort Beaufort','Florida','12540');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (1635252884,'Cherokee','Apartment','Ganja','South Carolina','19986');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (1646285290,'Holy Cross','House','Gananoque','Florida','12733');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (1662213964,'Fallview','Apartment','Nogueira da Regedoura','Indiana','14134');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (1915320819,'Meadow Vale','Townhome','Coronel Fabriciano','Georgia','13277');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (2032026412,'Golf View','Condo','Xihe','Georgia','16956');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (2038532833,'Browning','Condo','Sukamaju','Texas','18848');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (2115283604,'Golden Leaf','Condo','Caimitillo','California','21721');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (2171377164,'Sunbrook','Condo','Kota Kinabalu','Texas','15383');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (3022225686,'Colorado','Apartment','Sumuran','District of Columbia','13129');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (3370992897,'Schurz','House','Rio de Moinhos','Illinois','12722');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (3485191324,'Green Ridge','Apartment','Frederiksberg','California','14034');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (3646823306,'Packers','Apartment','Didi Lilo','New York','21127');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (3738361302,'Monument','House','Kh?jand','California','19803');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (3882360355,'Transport','Apartment','Motupe','Alabama','20752');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (3884639261,'Village Green','Condo','Bondoukou','Indiana','12725');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (4045732102,'Anhalt','House','Petrovskoye','Louisiana','20970');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (4174465116,'Pawling','House','Kafr Ba?n?','New York','12665');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (4322449536,'Pawling','House','Santander','California','15236');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (4522370768,'Mcguire','Apartment','Sambongmulyo','Ohio','22052');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (4837465017,'Grim','Condo','Horní ?ermná','Connecticut','18406');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (4887101747,'Pepper Wood','Condo','Fonte Boa dos Nabos','North Carolina','15372');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (5016335483,'Debra','Condo','Sîr ed Danniyé','New Jersey','18445');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (5082901842,'Pawling','House','Santo Domingo','Ohio','14191');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (5346126412,'Talisman','Apartment','El Bolsón','Texas','13317');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (5451895607,'Kipling','Condo','El Paso','California','13592');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (5456348381,'Knutson','Apartment','Hedong','Kentucky','17394');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (5477272944,'Menomonie','House','?dánice','New York','14501');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (5657388552,'Bayside','House','Cherëmukhovo','North Carolina','21379');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (6418215976,'Florence','House','Aipe','Indiana','22086');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (6428711610,'Debs','Townhouse','Aksakovo','Texas','19482');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (6552968172,'Iowa','Apartment','Palkino','California','12691');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (6747492572,'Namekagon','Apartment','Codajás','California','13332');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (6839833886,'Murray','Apartment','Herdon','Virginia','49302');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (6839833886,'Northwestern','House','Eadestown','Florida','19510');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (7216557687,'Del Sol','Townhouse','Adiaké','South Carolina','18988');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (7216557687,'Kobe','House','Los Angeles','California','43029');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (7382137763,'Waubesa','Condo','Plátanos','West Virginia','14902');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (7615405757,'Dixon','Condo','Spanish Wells','Missouri','21183');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (8012766616,'Warbler','Apartment','Koanara','California','20190');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (8144548225,'Swallow','Condo','Haparanda','Alabama','17344');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (8200303474,'Glendale','Condo','Orlando','Florida','54030');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (8200303474,'Harbort','Townhome','Norton','California','19129');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (8218652833,'Carioca','Condo','Duy Xuyên','Delaware','20578');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (8367525689,'Monument Drive','Office','Fairfax','Virginia','22033');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (8367525689,'Vernon','Apartment','New York City','South Dakota','13031');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (8868222372,'Dorton','House','Kamie? Pomorski','Virginia','15118');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (9639112538,'Erie','Apartment','F?man','Delaware','17931');
+Insert into ADDRESSES (CID,STREET,APT,CITY,STATE,ZIP) values (9639112538,'Huntington','Office','Alexandria','Virginia','22303');
+
+
+REM Insering into phones with a few extra phones for some customers
+
+SET DEFINE OFF;
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (547754312,'256-232-1075','Cell');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (635518276,'121-241-3451','Cell');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (826191346,'951-267-1338','Cell');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (928787108,'378-813-8365','Cell');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (1108442347,'522-487-4983','Cell');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (1137672915,'527-322-1794','Cell');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (1542321668,'984-534-5649','Work');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (1635252884,'320-382-5161','Cell');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (1646285290,'476-305-3691','Work');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (1662213964,'127-295-4529','Work');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (1915320819,'295-127-7506','Cell');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (2032026412,'997-410-5042','Work');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (2038532833,'276-966-8544','Cell');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (2115283604,'803-923-3529','Cell');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (2171377164,'360-571-2672','Cell');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (3022225686,'682-257-1194','Cell');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (3370992897,'550-961-8677','Home');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (3485191324,'155-443-5712','Home');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (3646823306,'626-982-2322','Work');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (3738361302,'983-719-5463','Work');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (3882360355,'837-709-2816','Work');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (3884639261,'955-394-8283','Work');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (4045732102,'672-647-8168','Home');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (4174465116,'411-305-4659','Work');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (4322449536,'372-588-0017','Work');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (4522370768,'244-805-0925','Cell');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (4837465017,'129-466-1399','Cell');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (4887101747,'651-894-7840','Work');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (5016335483,'926-781-1276','Cell');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (5082901842,'156-863-8109','Cell');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (5346126412,'950-272-0565','Cell');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (5451895607,'308-378-8702','Home');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (5456348381,'755-691-4006','Work');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (5477272944,'773-649-1403','Work');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (5657388552,'415-650-7760','Cell');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (6418215976,'636-895-5411','Home');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (6428711610,'471-879-2666','Work');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (6552968172,'320-864-9204','Cell');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (6552968172,'679-475-8523','Work');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (6747492572,'176-996-7182','Home');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (6839833886,'920-886-5366','Home');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (7216557687,'856-306-3310','Home');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (7382137763,'261-556-2752','Cell');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (7615405757,'751-875-4230','Cell');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (7615405757,'953-781-8450','Work');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (8012766616,'220-935-7220','Work');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (8144548225,'553-941-6450','Cell');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (8200303474,'340-935-7220','Work');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (8200303474,'716-310-0303','Home');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (8218652833,'553-888-6450','Cell');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (8218652833,'657-166-2451','Home');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (8367525689,'526-215-1879','Home');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (8868222372,'363-562-7555','Home');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (9639112538,'323-941-6450','Cell');
+Insert into PHONES (CID,PHONE,PHONE_TYPE) values (9639112538,'700-836-7714','Work');
+
+REM INSERTING 50 customer login records
+
+SET DEFINE OFF;
+Insert into LOGIN (CID,USERNAME,PASSWD) values (547754312,'gleupoldz','t1K3gjwl9Kv4');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (635518276,'bfoskin10','Yyg7PXJVB');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (826191346,'cbaden11','vLPnNv');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (928787108,'abelitz12','2CNOQy0d7nDE');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (1108442347,'adalzell13','WoarK7ZOHFZC');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (1137672915,'dsigart14','lameqC6SX');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (1542321668,'ldavidman15','9P6efN2oX');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (1635252884,'nkyston16','0mRdKrAN');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (1646285290,'wwolfinger17','WRO3XU');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (1662213964,'arouby18','9UzLfi');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (1915320819,'stire19','6NLT9hIoeO');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (2032026412,'agoreway1a','bSCVH0c');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (2038532833,'kdeignan1b','Ilovedogs1');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (2115283604,'bmeah1c','893Ok!');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (2171377164,'bandover1d','Ilovepizza');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (3022225686,'tnisot0','a9fyqzbCSMr');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (3370992897,'dleslie1','6BN8AD');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (3485191324,'nponte2','2rGaKzkMAWdb');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (3646823306,'cpaley3','Tx67Wm9cwZc7');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (3738361302,'bmcgrail4','a68Nyag');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (3882360355,'mcollings5','8etmZ65');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (3884639261,'gseif6','pTLufmm');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (4045732102,'hivanchov7','ign7g4Z');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (4174465116,'sgummoe8','L1xELNk');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (4322449536,'rnuscha9','49HUHviY');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (4522370768,'vbrookbanka','pc29ZXYF');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (4837465017,'rharesnapeb','MMFirze1R');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (4887101747,'eburlandc','ibt0MpDqKJ');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (5016335483,'cmalletrattd','0REccCId1E76');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (5082901842,'tmarneye','qnrdJla8By3D');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (5346126412,'lhumphrisf','bSIK73nh9Hu7');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (5451895607,'asoutherellg','TP2uASkZqzL');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (5456348381,'snealeh','EkQkSRj');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (5477272944,'scoffelti','lArWOOB');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (5657388552,'jovenj','VubRzxtqpaej');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (6418215976,'rkubatschk','hsprqgcf');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (6428711610,'vshearsl','bm77w3w');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (6552968172,'hcurem','8iL3iDUs');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (6747492572,'xlightbownen','3zT2L4');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (6839833886,'lpizeyo','yrFhfm5C9');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (7216557687,'tkeetingp','SqZatZPpa5QU');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (7382137763,'bgiuroniq','GKKLGRnGvYMM');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (7615405757,'lganningr','UH8e5O');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (8012766616,'kbakhrushkins','CNHUfEOJg0');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (8144548225,'ecallwayt','iPo6xOzOYYU');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (8200303474,'krubinovitschu','52gNiSBDYar');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (8218652833,'aadessv','7sayDoO8');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (8367525689,'fdewickw','8dmdaN8mvbuf');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (8868222372,'echittemx','9OMh7gsuki5');
+Insert into LOGIN (CID,USERNAME,PASSWD) values (9639112538,'dblazevicy','5ybvtkCa3Io5');
+
+
+REM INSERTING into POINT_ACCOUNTS
+SET DEFINE OFF;
+
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('2686428201',4559,619090,48,4887101747);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('4243184521',792,394303,73,826191346);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('8748474887',903,54934,35,4837465017);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('2510326120',761,30245,96,4045732102);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('8555959644',2015,962743,99,6747492572);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('8650223923',14445,160879,87,6418215976);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('4058756641',7705,667193,76,1915320819);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('8071602374',7047,62034,57,8868222372);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('7171535543',9408,543061,46,8218652833);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('2872433458',8646,248992,84,6552968172);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('6275133141',3655,118128,93,5082901842);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('8918228447',5372,846062,67,3485191324);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('1872266771',4434,186410,8,3022225686);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('1805528595',7423,977906,1,8012766616);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('5827246720',54079,411045,12,8200303474);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('1581538374',62859,745708,91,5016335483);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('2130441991',8002,776771,22,8144548225);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('6798141556',62,224180,21,1542321668);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('2486106825',9829,824020,95,3882360355);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('7959522177',586,59669,46,1635252884);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('6351482278',2586,118128,36,9639112538);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('5416144053',389,824020,84,6839833886);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('8175331126',935,186410,39,1646285290);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('235532116',5799,62034,69,5346126412);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('9123233563',41,null,74,2038532833);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('2567777614',85,62034,19,5657388552);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('6671905778',322,411045,1,4522370768);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('1550379825',407,118128,71,4174465116);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('5363473824',320,411045,94,6428711610);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('1678363376',427,962743,51,3646823306);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('1272126315',743,null,92,635518276);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('3641475726',143,248992,21,3884639261);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('8306431311',406,30245,7,2171377164);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('9631224371',9213,846062,72,7615405757);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('8275335435',272,962743,85,7382137763);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('4162986015',973,543061,61,928787108);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('8546521480',2454,394303,50,547754312);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('3185104307',3752,54934,63,1108442347);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('2584256555',21338,619090,85,1137672915);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('5854850270',897,160879,80,8367525689);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('2488211018',1036,160879,90,5456348381);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('8739553931',561,543061,59,2115283604);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('7547127150',25,977906,69,4322449536);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('5136694440',2,null,39,3370992897);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('6557376612',152,619090,2,7216557687);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('1757604573',543,667193,26,3738361302);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('1866725641',384,null,64,5451895607);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('7524297315',2987,543061,23,5477272944);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('8594864864',2681,667193,77,1662213964);
+Insert into POINT_ACCOUNTS (POINT_ACCT_NO,NUM_OF_POINTS,FAMILY_ID,PERCENT_ADDED,CID) values ('2855505518',2829,null,59,2032026412);
+
+
+
+REM INSERTING into BRANCHES
+SET DEFINE OFF;
+Insert into BRANCHES (BRANCH_ID,BRANCH_NAME,OPENING_HOURS,B_LOCATION) values ('19283','Woodwinds','9:00am - 9:00pm','Fairfax');
+Insert into BRANCHES (BRANCH_ID,BRANCH_NAME,OPENING_HOURS,B_LOCATION) values ('84932','Keyboards','10:30am - 9:00pm','Oakton');
+Insert into BRANCHES (BRANCH_ID,BRANCH_NAME,OPENING_HOURS,B_LOCATION) values ('47384','Orchestral Strings','10:00am - 9:00pm','Herdon');
+Insert into BRANCHES (BRANCH_ID,BRANCH_NAME,OPENING_HOURS,B_LOCATION) values ('95323','Drum','11:00am - 9:00pm','Baltimore');
+Insert into BRANCHES (BRANCH_ID,BRANCH_NAME,OPENING_HOURS,B_LOCATION) values ('64283','Percussion','9:00am - 9:00pm','Centerville');
+Insert into BRANCHES (BRANCH_ID,BRANCH_NAME,OPENING_HOURS,B_LOCATION) values ('29483','Guitar','9:30am - 9:00pm','Arlington');
+
+REM INSERTING into OFFERS
+SET DEFINE OFF;
+Insert into OFFERS (OFFER_ID,ACTION,O_DATE,O_DESCRIPTION) values ('938493','Active',to_date('01-AUG-10','DD-MON-RR'),'Summer Sale');
+Insert into OFFERS (OFFER_ID,ACTION,O_DATE,O_DESCRIPTION) values ('593942','Active',to_date('20-SEP-20','DD-MON-RR'),'Back to School');
+Insert into OFFERS (OFFER_ID,ACTION,O_DATE,O_DESCRIPTION) values ('584394','Expired',to_date('12-JUN-10','DD-MON-RR'),'Summer');
+Insert into OFFERS (OFFER_ID,ACTION,O_DATE,O_DESCRIPTION) values ('649590','Expired',to_date('18-JUL-21','DD-MON-RR'),'July 4th');
+Insert into OFFERS (OFFER_ID,ACTION,O_DATE,O_DESCRIPTION) values ('589343','Expired',to_date('08-JUN-17','DD-MON-RR'),'Summer');
+Insert into OFFERS (OFFER_ID,ACTION,O_DATE,O_DESCRIPTION) values ('239349','Active',to_date('19-AUG-21','DD-MON-RR'),'Back to School');
+Insert into OFFERS (OFFER_ID,ACTION,O_DATE,O_DESCRIPTION) values ('102938','Expired',to_date('23-JAN-22','DD-MON-RR'),'New Years');
+Insert into OFFERS (OFFER_ID,ACTION,O_DATE,O_DESCRIPTION) values ('112458','Active',to_date('01-MAY-22','DD-MON-RR'),'Memorial Day');
+Insert into OFFERS (OFFER_ID,ACTION,O_DATE,O_DESCRIPTION) values ('665748','Active',to_date('16-DEC-20','DD-MON-RR'),'Christmas');
+Insert into OFFERS (OFFER_ID,ACTION,O_DATE,O_DESCRIPTION) values ('784930','Active',to_date('10-MAY-16','DD-MON-RR'),'Memorial Day');
+
+REM INSERTING into EXCHGCENTERS
+SET DEFINE OFF;
+Insert into EXCHGCENTERS (CENTER_ID,CENTER_NAME,C_LOCATION) values (29439,'FairfaxEC','Fairfax');
+Insert into EXCHGCENTERS (CENTER_ID,CENTER_NAME,C_LOCATION) values (95394,'ArlingtonEC','Arlington');
+Insert into EXCHGCENTERS (CENTER_ID,CENTER_NAME,C_LOCATION) values (39244,'BaltimoreEC','Baltimore');
+Insert into EXCHGCENTERS (CENTER_ID,CENTER_NAME,C_LOCATION) values (20302,'HerdonEC','Herdon');
+Insert into EXCHGCENTERS (CENTER_ID,CENTER_NAME,C_LOCATION) values (58493,'CentervilleEC','Centerville');
+
+REM INSERTING into PRIZES
+SET DEFINE OFF;
+Insert into PRIZES (PRIZE_ID,POINTS_NEEDED,P_DESCRIPTION) values (293049,34932,'Guitar Hero Game');
+Insert into PRIZES (PRIZE_ID,POINTS_NEEDED,P_DESCRIPTION) values (934203,1029,'The Beatles CD');
+Insert into PRIZES (PRIZE_ID,POINTS_NEEDED,P_DESCRIPTION) values (120394,2930,'Headphones');
+Insert into PRIZES (PRIZE_ID,POINTS_NEEDED,P_DESCRIPTION) values (390432,1920,'Lady Gaga CD');
+Insert into PRIZES (PRIZE_ID,POINTS_NEEDED,P_DESCRIPTION) values (39503,2304,'Guitar Case');
+Insert into PRIZES (PRIZE_ID,POINTS_NEEDED,P_DESCRIPTION) values (34954,2934,'$15 Gift Card');
+Insert into PRIZES (PRIZE_ID,POINTS_NEEDED,P_DESCRIPTION) values (58392,9403,'$150 Gift Card');
+Insert into PRIZES (PRIZE_ID,POINTS_NEEDED,P_DESCRIPTION) values (392402,8493,'Tame Impala CD');
+Insert into PRIZES (PRIZE_ID,POINTS_NEEDED,P_DESCRIPTION) values (49304,1200,'Rihanna Vinyl');
+Insert into PRIZES (PRIZE_ID,POINTS_NEEDED,P_DESCRIPTION) values (32940,4902,'CD Player');
+Insert into PRIZES (PRIZE_ID,POINTS_NEEDED,P_DESCRIPTION) values (85943,1700,'Airpod Music Case');
+Insert into PRIZES (PRIZE_ID,POINTS_NEEDED,P_DESCRIPTION) values (58493,429,'Music Note Eraser');
+Insert into PRIZES (PRIZE_ID,POINTS_NEEDED,P_DESCRIPTION) values (75493,200,'Music Notes Pencil');
+Insert into PRIZES (PRIZE_ID,POINTS_NEEDED,P_DESCRIPTION) values (48392,59303,'Guitar');
+Insert into PRIZES (PRIZE_ID,POINTS_NEEDED,P_DESCRIPTION) values (493023,4930,'$100 Guitar');
+
+REM INSERTING into OFFERS_BRANCHES
+SET DEFINE OFF;
+Insert into OFFERS_BRANCHES (OFFER_ID,BRANCH_ID) values ('112458','64283');
+Insert into OFFERS_BRANCHES (OFFER_ID,BRANCH_ID) values ('112458','95323');
+Insert into OFFERS_BRANCHES (OFFER_ID,BRANCH_ID) values ('239349','19283');
+Insert into OFFERS_BRANCHES (OFFER_ID,BRANCH_ID) values ('239349','84932');
+Insert into OFFERS_BRANCHES (OFFER_ID,BRANCH_ID) values ('593942','47384');
+Insert into OFFERS_BRANCHES (OFFER_ID,BRANCH_ID) values ('593942','95323');
+Insert into OFFERS_BRANCHES (OFFER_ID,BRANCH_ID) values ('665748','29483');
+Insert into OFFERS_BRANCHES (OFFER_ID,BRANCH_ID) values ('665748','64283');
+Insert into OFFERS_BRANCHES (OFFER_ID,BRANCH_ID) values ('784930','19283');
+Insert into OFFERS_BRANCHES (OFFER_ID,BRANCH_ID) values ('784930','29483');
+Insert into OFFERS_BRANCHES (OFFER_ID,BRANCH_ID) values ('938493','47384');
+Insert into OFFERS_BRANCHES (OFFER_ID,BRANCH_ID) values ('938493','84932');
+
+REM INSERTING into CARDS
+SET DEFINE OFF;
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('16088',to_date('02-MAY-33','DD-MON-RR'),'A',to_date('19-APR-18','DD-MON-RR'),4045732102);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('758835',to_date('28-JAN-48','DD-MON-RR'),'A',to_date('09-AUG-16','DD-MON-RR'),6747492572);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('506507',to_date('10-JUL-45','DD-MON-RR'),'A',to_date('16-MAR-16','DD-MON-RR'),4887101747);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('709680',to_date('24-NOV-41','DD-MON-RR'),'A',to_date('27-MAR-20','DD-MON-RR'),6418215976);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('612846',to_date('17-NOV-35','DD-MON-RR'),'A',to_date('22-AUG-21','DD-MON-RR'),1915320819);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('185965',to_date('14-NOV-48','DD-MON-RR'),'A',to_date('18-APR-16','DD-MON-RR'),8868222372);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('638052',to_date('06-FEB-44','DD-MON-RR'),'A',to_date('20-OCT-15','DD-MON-RR'),8218652833);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('898849',to_date('07-DEC-24','DD-MON-RR'),'A',to_date('29-MAY-18','DD-MON-RR'),6552968172);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('793705',to_date('21-APR-23','DD-MON-RR'),'A',to_date('10-SEP-19','DD-MON-RR'),5082901842);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('338975',to_date('30-DEC-32','DD-MON-RR'),'A',to_date('26-DEC-14','DD-MON-RR'),3485191324);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('129608',to_date('08-OCT-48','DD-MON-RR'),'A',to_date('23-MAR-19','DD-MON-RR'),3022225686);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('283356',to_date('10-NOV-42','DD-MON-RR'),'A',to_date('30-AUG-15','DD-MON-RR'),8012766616);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('233828',to_date('19-AUG-26','DD-MON-RR'),'A',to_date('24-JUN-15','DD-MON-RR'),8200303474);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('777200',to_date('16-AUG-29','DD-MON-RR'),'A',to_date('13-OCT-19','DD-MON-RR'),5016335483);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('64735',to_date('05-JUL-48','DD-MON-RR'),'A',to_date('17-APR-20','DD-MON-RR'),8144548225);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('771727',to_date('31-AUG-35','DD-MON-RR'),'A',to_date('08-JUL-18','DD-MON-RR'),1542321668);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('257387',to_date('07-APR-29','DD-MON-RR'),'A',to_date('23-MAY-17','DD-MON-RR'),1635252884);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('748700',to_date('20-MAY-40','DD-MON-RR'),'A',to_date('31-OCT-15','DD-MON-RR'),9639112538);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('599185',to_date('17-NOV-32','DD-MON-RR'),'A',to_date('28-OCT-18','DD-MON-RR'),6839833886);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('548600',to_date('15-DEC-22','DD-MON-RR'),'A',to_date('07-APR-15','DD-MON-RR'),1646285290);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('387195',to_date('07-MAR-40','DD-MON-RR'),'A',to_date('06-DEC-20','DD-MON-RR'),5346126412);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('175567',to_date('13-MAR-46','DD-MON-RR'),'A',to_date('26-JUN-16','DD-MON-RR'),2038532833);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('740128',to_date('10-SEP-47','DD-MON-RR'),'A',to_date('02-JUN-19','DD-MON-RR'),5657388552);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('90765',to_date('14-AUG-43','DD-MON-RR'),'A',to_date('05-MAR-19','DD-MON-RR'),4522370768);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('667436',to_date('16-AUG-26','DD-MON-RR'),'A',to_date('09-JUL-18','DD-MON-RR'),4174465116);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('597501',to_date('11-SEP-48','DD-MON-RR'),'A',to_date('14-DEC-17','DD-MON-RR'),6428711610);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('691020',to_date('16-DEC-26','DD-MON-RR'),'A',to_date('16-OCT-20','DD-MON-RR'),3646823306);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('407664',to_date('03-JUL-32','DD-MON-RR'),'A',to_date('30-NOV-14','DD-MON-RR'),635518276);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('568662',to_date('05-JUN-25','DD-MON-RR'),'A',to_date('08-FEB-15','DD-MON-RR'),3884639261);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('484332',to_date('26-JUL-34','DD-MON-RR'),'A',to_date('11-OCT-21','DD-MON-RR'),2171377164);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('591876',to_date('01-APR-34','DD-MON-RR'),'A',to_date('16-JUL-21','DD-MON-RR'),7615405757);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('676885',to_date('22-NOV-45','DD-MON-RR'),'A',to_date('07-MAY-21','DD-MON-RR'),7382137763);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('360526',to_date('17-FEB-39','DD-MON-RR'),'A',to_date('03-OCT-20','DD-MON-RR'),928787108);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('683294',to_date('22-MAR-49','DD-MON-RR'),'A',to_date('15-APR-20','DD-MON-RR'),547754312);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('143880',to_date('10-MAR-45','DD-MON-RR'),'A',to_date('01-APR-20','DD-MON-RR'),1108442347);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('643361',to_date('28-DEC-41','DD-MON-RR'),'A',to_date('25-JAN-19','DD-MON-RR'),1137672915);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('852202',to_date('23-FEB-49','DD-MON-RR'),'A',to_date('12-APR-20','DD-MON-RR'),8367525689);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('375263',to_date('11-AUG-34','DD-MON-RR'),'A',to_date('13-AUG-16','DD-MON-RR'),5456348381);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('367190',to_date('08-JUL-46','DD-MON-RR'),'A',to_date('28-SEP-20','DD-MON-RR'),2115283604);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('697140',to_date('20-FEB-34','DD-MON-RR'),'A',to_date('19-JAN-17','DD-MON-RR'),4322449536);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('129393',to_date('07-SEP-30','DD-MON-RR'),'A',to_date('31-JAN-20','DD-MON-RR'),3370992897);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('297241',to_date('30-NOV-30','DD-MON-RR'),'A',to_date('02-FEB-16','DD-MON-RR'),7216557687);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('451284',to_date('14-SEP-24','DD-MON-RR'),'A',to_date('07-FEB-15','DD-MON-RR'),3738361302);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('406545',to_date('08-DEC-45','DD-MON-RR'),'A',to_date('17-JUL-17','DD-MON-RR'),5451895607);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('581641',to_date('28-AUG-28','DD-MON-RR'),'A',to_date('05-SEP-20','DD-MON-RR'),5477272944);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('403495',to_date('20-DEC-37','DD-MON-RR'),'A',to_date('28-FEB-16','DD-MON-RR'),1662213964);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('417106',to_date('14-NOV-47','DD-MON-RR'),'A',to_date('13-OCT-15','DD-MON-RR'),2032026412);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('11122',to_date('17-APR-20','DD-MON-RR'),'E',to_date('08-OCT-15','DD-MON-RR'),7615405757);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('34922',to_date('08-JUL-18','DD-MON-RR'),'E',to_date('19-DEC-14','DD-MON-RR'),7382137763);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('99823',to_date('23-MAY-17','DD-MON-RR'),'E',to_date('28-FEB-12','DD-MON-RR'),928787108);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('80098',to_date('31-OCT-15','DD-MON-RR'),'E',to_date('15-MAY-13','DD-MON-RR'),547754312);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('84931',to_date('28-OCT-18','DD-MON-RR'),'E',to_date('24-JAN-10','DD-MON-RR'),1108442347);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('149598',to_date('13-OCT-23','DD-MON-RR'),'A',to_date('05-OCT-18','DD-MON-RR'),3882360355);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('92304',to_date('23-AUG-24','DD-MON-RR'),'A',to_date('21-OCT-22','DD-MON-RR'),826191346);
+Insert into CARDS (CARD_ID,EXP_DATE,STATUS,C_DATE,CID) values ('29402',to_date('11-NOV-29','DD-MON-RR'),'A',to_date('29-DEC-22','DD-MON-RR'),4837465017);
+
+REM INSERTING into PRODUCTS
+SET DEFINE OFF;
+Insert into PRODUCTS (PROD_ID,PROD_NAME,PRICE,PROD_POINTS) values ('18930','Keyboard',911.49,378);
+Insert into PRODUCTS (PROD_ID,PROD_NAME,PRICE,PROD_POINTS) values ('68950','Red Guitar',786.04,102);
+Insert into PRODUCTS (PROD_ID,PROD_NAME,PRICE,PROD_POINTS) values ('23549','Piano',626.08,729);
+Insert into PRODUCTS (PROD_ID,PROD_NAME,PRICE,PROD_POINTS) values ('92543','Flute',215.83,106);
+Insert into PRODUCTS (PROD_ID,PROD_NAME,PRICE,PROD_POINTS) values ('79543','Music Speaker',963.37,636);
+Insert into PRODUCTS (PROD_ID,PROD_NAME,PRICE,PROD_POINTS) values ('35435','Bass',540,718);
+Insert into PRODUCTS (PROD_ID,PROD_NAME,PRICE,PROD_POINTS) values ('65463','Drums',69.9,288);
+Insert into PRODUCTS (PROD_ID,PROD_NAME,PRICE,PROD_POINTS) values ('20543','Triangle',100.58,112);
+Insert into PRODUCTS (PROD_ID,PROD_NAME,PRICE,PROD_POINTS) values ('36543','Violin',425.92,410);
+Insert into PRODUCTS (PROD_ID,PROD_NAME,PRICE,PROD_POINTS) values ('65654','Trumpet',652.58,667);
+
+REM INSERTING into TRANSACTIONS
+SET DEFINE OFF;
+Insert into TRANSACTIONS (TREF,T_DATE,T_TIME,AMOUNT,T_POINTS,CASHIER_NAME,T_DESCRIPTION,CID,POINT_ACCT_NO) values ('12943',to_date('01-AUG-20','DD-MON-RR'),'9:30 AM',3922.73,800,'Maya','5 items bought',4887101747,'2686428201');
+Insert into TRANSACTIONS (TREF,T_DATE,T_TIME,AMOUNT,T_POINTS,CASHIER_NAME,T_DESCRIPTION,CID,POINT_ACCT_NO) values ('2943',to_date('10-JUL-20','DD-MON-RR'),'4:30 PM',6756.13,1890,'Alex','5 items bought',826191346,'4243184521');
+Insert into TRANSACTIONS (TREF,T_DATE,T_TIME,AMOUNT,T_POINTS,CASHIER_NAME,T_DESCRIPTION,CID,POINT_ACCT_NO) values ('54930',to_date('12-JAN-21','DD-MON-RR'),'5:40 PM',6962.13,1900,'Nick','5 items bought',4837465017,'8748474887');
+Insert into TRANSACTIONS (TREF,T_DATE,T_TIME,AMOUNT,T_POINTS,CASHIER_NAME,T_DESCRIPTION,CID,POINT_ACCT_NO) values ('64794',to_date('18-JUL-22','DD-MON-RR'),'8:30 PM ',8468.49,2000,'Macy','5 items bought',4045732102,'2510326120');
+Insert into TRANSACTIONS (TREF,T_DATE,T_TIME,AMOUNT,T_POINTS,CASHIER_NAME,T_DESCRIPTION,CID,POINT_ACCT_NO) values ('89403',to_date('29-DEC-19','DD-MON-RR'),'11:20 PM',311.81,20,'Maria','5 items bought with offer',6747492572,'8555959644');
+Insert into TRANSACTIONS (TREF,T_DATE,T_TIME,AMOUNT,T_POINTS,CASHIER_NAME,T_DESCRIPTION,CID,POINT_ACCT_NO) values ('758392',to_date('22-APR-22','DD-MON-RR'),'3:30 PM',6522.77,1820,'Nancy','5 items bought',6418215976,'8650223923');
+Insert into TRANSACTIONS (TREF,T_DATE,T_TIME,AMOUNT,T_POINTS,CASHIER_NAME,T_DESCRIPTION,CID,POINT_ACCT_NO) values ('38239',to_date('10-MAY-10','DD-MON-RR'),'4:40 PM',9123.43,2500,'Justin','5 items bought with offer',1915320819,'4058756641');
+Insert into TRANSACTIONS (TREF,T_DATE,T_TIME,AMOUNT,T_POINTS,CASHIER_NAME,T_DESCRIPTION,CID,POINT_ACCT_NO) values ('43294',to_date('27-FEB-21','DD-MON-RR'),'5:55 PM',7873.96,1910,'Hailey','5 items bought',8868222372,'8071602374');
+Insert into TRANSACTIONS (TREF,T_DATE,T_TIME,AMOUNT,T_POINTS,CASHIER_NAME,T_DESCRIPTION,CID,POINT_ACCT_NO) values ('549305',to_date('05-MAR-19','DD-MON-RR'),'10:23 AM',2450.15,1000,'Kim','5 items bought with offer',8218652833,'7171535543');
+Insert into TRANSACTIONS (TREF,T_DATE,T_TIME,AMOUNT,T_POINTS,CASHIER_NAME,T_DESCRIPTION,CID,POINT_ACCT_NO) values ('85848889',to_date('11-APR-19','DD-MON-RR'),'12:19 PM',3255.97,1010,'Kat','5 items bought with offer',6552968172,'2872433458');
+
+REM INSERTING into TRANSACTIONS_PRODUCTS
+SET DEFINE OFF;
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('12943','18930',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('12943','68950',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('12943','23549',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('12943','92543',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('12943','79543',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('2943','35435',2);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('2943','65463',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('2943','20543',2);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('2943','36543',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('2943','65654',2);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('54930','68950',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('54930','23549',3);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('54930','92543',3);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('54930','79543',4);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('54930','35435',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('64794','23549',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('64794','92543',2);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('64794','79543',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('64794','35435',2);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('64794','65463',2);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('89403','92543',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('89403','79543',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('89403','35435',2);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('89403','65463',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('89403','20543',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('758392','79543',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('758392','35435',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('758392','65463',2);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('758392','20543',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('758392','36543',3);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('38239','18930',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('38239','23549',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('38239','79543',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('38239','65463',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('38239','36543',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('43294','36543',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('43294','65654',2);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('43294','79543',5);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('43294','35435',6);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('43294','65463',4);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('549305','18930',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('549305','68950',2);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('549305','23549',3);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('549305','35435',4);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('549305','65654',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('85848889','65654',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('85848889','68950',2);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('85848889','79543',1);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('85848889','35435',3);
+Insert into TRANSACTIONS_PRODUCTS (TREF,PROD_ID,QUANTITY) values ('85848889','65463',1);
+
+REM INSERTING into REDEMPTION_HISTORY
+SET DEFINE OFF;
+Insert into REDEMPTION_HISTORY (CID,PRIZE_ID,R_DATE,QUANTITY,POINT_ACCT_NO,CENTER_ID) values (1635252884,58392,to_date('23-JUN-20','DD-MON-RR'),1,'7959522177',29439);
+Insert into REDEMPTION_HISTORY (CID,PRIZE_ID,R_DATE,QUANTITY,POINT_ACCT_NO,CENTER_ID) values (9639112538,392402,to_date('13-JUL-20','DD-MON-RR'),2,'6351482278',95394);
+Insert into REDEMPTION_HISTORY (CID,PRIZE_ID,R_DATE,QUANTITY,POINT_ACCT_NO,CENTER_ID) values (6839833886,49304,to_date('28-DEC-20','DD-MON-RR'),2,'5416144053',39244);
+Insert into REDEMPTION_HISTORY (CID,PRIZE_ID,R_DATE,QUANTITY,POINT_ACCT_NO,CENTER_ID) values (1646285290,32940,to_date('27-MAR-20','DD-MON-RR'),1,'8175331126',20302);
+Insert into REDEMPTION_HISTORY (CID,PRIZE_ID,R_DATE,QUANTITY,POINT_ACCT_NO,CENTER_ID) values (5346126412,85943,to_date('28-FEB-20','DD-MON-RR'),2,'235532116',58493);
+Insert into REDEMPTION_HISTORY (CID,PRIZE_ID,R_DATE,QUANTITY,POINT_ACCT_NO,CENTER_ID) values (2038532833,58493,to_date('11-JUN-22','DD-MON-RR'),3,'9123233563',29439);
+Insert into REDEMPTION_HISTORY (CID,PRIZE_ID,R_DATE,QUANTITY,POINT_ACCT_NO,CENTER_ID) values (5657388552,75493,to_date('24-JAN-22','DD-MON-RR'),1,'2567777614',95394);
+Insert into REDEMPTION_HISTORY (CID,PRIZE_ID,R_DATE,QUANTITY,POINT_ACCT_NO,CENTER_ID) values (4522370768,48392,to_date('22-JUL-20','DD-MON-RR'),1,'6671905778',39244);
+Insert into REDEMPTION_HISTORY (CID,PRIZE_ID,R_DATE,QUANTITY,POINT_ACCT_NO,CENTER_ID) values (4174465116,293049,to_date('03-SEP-21','DD-MON-RR'),2,'1550379825',20302);
+Insert into REDEMPTION_HISTORY (CID,PRIZE_ID,R_DATE,QUANTITY,POINT_ACCT_NO,CENTER_ID) values (6428711610,934203,to_date('21-OCT-19','DD-MON-RR'),4,'5363473824',58493);
+Insert into REDEMPTION_HISTORY (CID,PRIZE_ID,R_DATE,QUANTITY,POINT_ACCT_NO,CENTER_ID) values (3646823306,120394,to_date('02-FEB-21','DD-MON-RR'),2,'1678363376',29439);
+Insert into REDEMPTION_HISTORY (CID,PRIZE_ID,R_DATE,QUANTITY,POINT_ACCT_NO,CENTER_ID) values (635518276,390432,to_date('13-NOV-19','DD-MON-RR'),1,'1272126315',95394);
+Insert into REDEMPTION_HISTORY (CID,PRIZE_ID,R_DATE,QUANTITY,POINT_ACCT_NO,CENTER_ID) values (3884639261,39503,to_date('19-MAR-21','DD-MON-RR'),1,'3641475726',39244);
+Insert into REDEMPTION_HISTORY (CID,PRIZE_ID,R_DATE,QUANTITY,POINT_ACCT_NO,CENTER_ID) values (2171377164,293049,to_date('19-OCT-22','DD-MON-RR'),2,'8306431311',20302);
+Insert into REDEMPTION_HISTORY (CID,PRIZE_ID,R_DATE,QUANTITY,POINT_ACCT_NO,CENTER_ID) values (7615405757,293049,to_date('10-JUN-22','DD-MON-RR'),3,'9631224371',58493);
+Insert into REDEMPTION_HISTORY (CID,PRIZE_ID,R_DATE,QUANTITY,POINT_ACCT_NO,CENTER_ID) values (7382137763,39503,to_date('17-MAY-22','DD-MON-RR'),1,'8275335435',29439);
+Insert into REDEMPTION_HISTORY (CID,PRIZE_ID,R_DATE,QUANTITY,POINT_ACCT_NO,CENTER_ID) values (928787108,34954,to_date('29-JUL-20','DD-MON-RR'),2,'4162986015',95394);
+Insert into REDEMPTION_HISTORY (CID,PRIZE_ID,R_DATE,QUANTITY,POINT_ACCT_NO,CENTER_ID) values (547754312,58392,to_date('17-NOV-21','DD-MON-RR'),1,'8546521480',39244);
+Insert into REDEMPTION_HISTORY (CID,PRIZE_ID,R_DATE,QUANTITY,POINT_ACCT_NO,CENTER_ID) values (1108442347,392402,to_date('20-AUG-21','DD-MON-RR'),1,'3185104307',20302);
+Insert into REDEMPTION_HISTORY (CID,PRIZE_ID,R_DATE,QUANTITY,POINT_ACCT_NO,CENTER_ID) values (1137672915,49304,to_date('17-DEC-21','DD-MON-RR'),2,'2584256555',58493);
+
+REM validated by Arti up to this point
+
+
+
+
+
+
+
+
+
+
+
+
+
+
