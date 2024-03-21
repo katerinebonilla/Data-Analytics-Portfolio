@@ -1,4 +1,3 @@
-# Data-Analytics-Portfolio
 # Welcome to My Data Analyst Portfolio!
 
 ## About Me
